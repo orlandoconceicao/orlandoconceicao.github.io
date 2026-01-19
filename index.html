@@ -1,142 +1,397 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Orlando Conceição</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
-
-  <!-- Dev Icon Fonts -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!-- CSS do Projeto -->
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<title>Plano Python para FastAPI - 15 Dias</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #111827;
+}
+.day {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.section {
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 6px;
+}
+input {
+    margin-right: 6px;
+}
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #6b7280;
+}
+</style>
 </head>
 <body>
 
-  <main id="container">
+<h1>🚀 Plano Python para FastAPI – 15 Dias</h1>
+<p>Objetivo: entrar no curso <strong>FastAPI – Websites Modernos e Assíncronos com Python</strong> com base sólida.</p>
 
-    <!-- BIO -->
-    <aside id="bio-container">
-      <h2>Orlando Conceição</h2>
+<hr>
 
-      <img id="bio-image" src="img/eu.jpeg" alt="Orlando Conceição">
+<!-- DIA 1 -->
+<div class="day">
+<h3>Dia 1 – Introdução ao Python</h3>
 
-      <p>
-        Olá, meu nome é Orlando Conceição e sou
-        <span class="highlight">Desenvolvedor Back-end (FastAPI)</span>.
-      </p>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> O que é Python</li>
+<li><input type="checkbox"> Instalação</li>
+<li><input type="checkbox"> Primeiro script</li>
+<li><a href="https://www.youtube.com/watch?v=S9uPNppGsGo" target="_blank">▶ Curso em Vídeo – Aula 1</a></li>
+</ul>
+</div>
 
-      <p id="welcome-text">Seja bem-vindo!</p>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar um arquivo .py</li>
+<li><input type="checkbox"> Usar print("Olá, mundo")</li>
+<li><input type="checkbox"> Executar pelo terminal</li>
+</ul>
+</div>
+</div>
 
-      <ul id="social-container">
-        <li>
-          <a href="#" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-      </ul>
+<!-- DIA 2 -->
+<div class="day">
+<h3>Dia 2 – Variáveis e Tipos</h3>
 
-      <div id="email-container">
-        <ion-icon name="mail-outline"></ion-icon>
-        <a href="mailto:orlandoconceicao94@gmail.com">
-          orlandoconceicao94@gmail.com
-        </a>
-      </div>
-    </aside>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> int, float, str, bool</li>
+<li><input type="checkbox"> print()</li>
+<li><a href="https://www.youtube.com/watch?v=hdDHg1p3YVc" target="_blank">▶ Tipos Primitivos</a></li>
+</ul>
+</div>
 
-    <!-- SOBRE -->
-    <section id="about-container">
-      <h1 id="name">Orlando Conceição</h1>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar 4 variáveis (1 de cada tipo)</li>
+<li><input type="checkbox"> Imprimir todas</li>
+<li><input type="checkbox"> Concatenar texto + número</li>
+</ul>
+</div>
+</div>
 
-      <p id="title">
-        <span class="highlight">Desenvolvedor Back-end • FastAPI</span>
-      </p>
+<!-- DIA 3 -->
+<div class="day">
+<h3>Dia 3 – Condições</h3>
 
-      <p class="description">
-        Atuo no desenvolvimento de aplicações desde a
-        <span class="highlight">definição das regras de negócio</span>,
-        criação de <span class="highlight">APIs REST</span>,
-        <span class="highlight">modelagem de banco de dados</span>
-        até o <span class="highlight">deploy da aplicação</span>.
-      </p>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> if / elif / else</li>
+<li><input type="checkbox"> operadores lógicos</li>
+<li><a href="https://www.youtube.com/watch?v=Kj6P1Xh9q0Y" target="_blank">▶ Condições</a></li>
+</ul>
+</div>
 
-      <p class="description">
-        Trabalho com foco em <span class="highlight">performance</span>,
-        <span class="highlight">segurança</span> e
-        <span class="highlight">escalabilidade</span>, utilizando
-        boas práticas de arquitetura e código limpo.
-      </p>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Verificar se idade ≥ 18</li>
+<li><input type="checkbox"> Criar sistema de nota (aprovado/reprovado)</li>
+</ul>
+</div>
+</div>
 
-      <p class="description">
-        Sou apaixonado por tecnologia, estudo diariamente e busco
-        sempre evoluir como desenvolvedor back-end.
-      </p>
+<!-- DIA 4 -->
+<div class="day">
+<h3>Dia 4 – Laços</h3>
 
-      <a href="#" id="btn-projects">
-        <ion-icon name="share-social-outline"></ion-icon>
-        <span>Ver Projetos</span>
-      </a>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> for</li>
+<li><input type="checkbox"> while</li>
+<li><a href="https://www.youtube.com/watch?v=1QYfF0mM5d0" target="_blank">▶ Laços</a></li>
+</ul>
+</div>
 
-      <!-- SKILLS -->
-      <h2 id="skills-section-title">Minhas Skills</h2>
-      <p class="description">Tecnologias que utilizo no Back-end:</p>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Imprimir números de 1 a 10</li>
+<li><input type="checkbox"> Somar números de uma lista</li>
+</ul>
+</div>
+</div>
 
-      <div id="skills-container">
+<!-- DIA 5 -->
+<div class="day">
+<h3>Dia 5 – Listas e Tuplas</h3>
 
-        <div class="skills-box">
-          <p class="skills-title">Back-end Core</p>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-fastapi-plain colored"></i>
-        </div>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> Listas</li>
+<li><input type="checkbox"> Tuplas</li>
+<li><a href="https://www.youtube.com/watch?v=HGOBQPFzWKo" target="_blank">▶ Lists</a></li>
+</ul>
+</div>
 
-        <div class="skills-box">
-          <p class="skills-title">APIs & Frameworks</p>
-          <i class="devicon-fastapi-plain colored"></i>
-          <i class="devicon-django-plain colored"></i>
-          <i class="devicon-flask-original colored"></i>
-        </div>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar lista de usuários</li>
+<li><input type="checkbox"> Acessar por índice</li>
+<li><input type="checkbox"> Percorrer com for</li>
+</ul>
+</div>
+</div>
 
-        <div class="skills-box">
-          <p class="skills-title">Banco de Dados</p>
-          <i class="devicon-postgresql-plain colored"></i>
-          <i class="devicon-mysql-plain colored"></i>
-          <i class="devicon-mongodb-plain colored"></i>
-        </div>
+<!-- DIA 6 -->
+<div class="day">
+<h3>Dia 6 – Dicionários</h3>
 
-        <div class="skills-box">
-          <p class="skills-title">ORM & Validação</p>
-          <i class="devicon-sqlalchemy-plain colored"></i>
-          <i class="devicon-pydantic-plain colored"></i>
-        </div>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> dict</li>
+<li><input type="checkbox"> chave / valor</li>
+<li><a href="https://www.youtube.com/watch?v=daefaLgNkw0" target="_blank">▶ Dictionaries</a></li>
+</ul>
+</div>
 
-        <div class="skills-box">
-          <p class="skills-title">DevOps & Deploy</p>
-          <i class="devicon-docker-plain colored"></i>
-          <i class="devicon-linux-plain colored"></i>
-          <i class="devicon-nginx-original colored"></i>
-        </div>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar dict de usuário</li>
+<li><input type="checkbox"> Acessar valores</li>
+<li><input type="checkbox"> Percorrer dict</li>
+</ul>
+</div>
+</div>
 
-        <div class="skills-box">
-          <p class="skills-title">Versionamento & Testes</p>
-          <i class="devicon-git-plain colored"></i>
-          <i class="devicon-github-original colored"></i>
-          <i class="devicon-pytest-plain colored"></i>
-        </div>
+<!-- DIA 7 -->
+<div class="day">
+<h3>Dia 7 – Funções</h3>
 
-      </div>
-    </section>
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> def</li>
+<li><input type="checkbox"> return</li>
+<li><a href="https://www.youtube.com/watch?v=9Os0o3wzS_I" target="_blank">▶ Functions</a></li>
+</ul>
+</div>
 
-  </main>
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Função soma(a, b)</li>
+<li><input type="checkbox"> Função validar_idade()</li>
+</ul>
+</div>
+</div>
 
-  <!-- Ion Icons -->
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!-- DIA 8 -->
+<div class="day">
+<h3>Dia 8 – Módulos</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> import</li>
+<li><input type="checkbox"> from</li>
+<li><a href="https://www.youtube.com/watch?v=CqvZ3vGoGs0" target="_blank">▶ Modules</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar módulo utils.py</li>
+<li><input type="checkbox"> Importar função</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 9 -->
+<div class="day">
+<h3>Dia 9 – POO</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> class</li>
+<li><input type="checkbox"> __init__</li>
+<li><a href="https://www.youtube.com/watch?v=ZDa-Z5JzLYM" target="_blank">▶ Classes</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar classe Usuario</li>
+<li><input type="checkbox"> Instanciar objeto</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 10 -->
+<div class="day">
+<h3>Dia 10 – Type Hints</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> str, int</li>
+<li><input type="checkbox"> List, Optional</li>
+<li><a href="https://www.youtube.com/watch?v=QORvB-_mbZ0" target="_blank">▶ Type Hints</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Tipar funções</li>
+<li><input type="checkbox"> Tipar retorno</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 11 -->
+<div class="day">
+<h3>Dia 11 – Exceptions</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> try / except</li>
+<li><input type="checkbox"> ValueError</li>
+<li><a href="https://www.youtube.com/watch?v=NIWwJbo-9_8" target="_blank">▶ Exceptions</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Tratar erro de conversão</li>
+<li><input type="checkbox"> Criar mensagem personalizada</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 12 -->
+<div class="day">
+<h3>Dia 12 – Ambientes Virtuais</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> venv</li>
+<li><input type="checkbox"> pip</li>
+<li><a href="https://www.youtube.com/watch?v=N5vscPTWKOk" target="_blank">▶ venv</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar venv</li>
+<li><input type="checkbox"> Instalar pacote</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 13 -->
+<div class="day">
+<h3>Dia 13 – Async / Await</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> async def</li>
+<li><input type="checkbox"> await</li>
+<li><a href="https://www.youtube.com/watch?v=2IW-ZEui4h4" target="_blank">▶ Async</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar função async</li>
+<li><input type="checkbox"> Simular await</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 14 -->
+<div class="day">
+<h3>Dia 14 – Decorators</h3>
+
+<div class="section">
+<strong>📘 Conteúdo</strong>
+<ul>
+<li><input type="checkbox"> @decorator</li>
+<li><input type="checkbox"> Noções FastAPI</li>
+<li><a href="https://www.youtube.com/watch?v=FsAPt_9Bf3U" target="_blank">▶ Decorators</a></li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🧪 Exercícios</strong>
+<ul>
+<li><input type="checkbox"> Criar decorator simples</li>
+<li><input type="checkbox"> Aplicar em função</li>
+</ul>
+</div>
+</div>
+
+<!-- DIA 15 -->
+<div class="day">
+<h3>Dia 15 – Revisão Final</h3>
+
+<div class="section">
+<strong>📘 Revisar</strong>
+<ul>
+<li><input type="checkbox"> Funções</li>
+<li><input type="checkbox"> Dicts</li>
+<li><input type="checkbox"> Async</li>
+<li><input type="checkbox"> Type Hints</li>
+</ul>
+</div>
+
+<div class="section">
+<strong>🏁 Resultado</strong>
+<ul>
+<li><input type="checkbox"> ✅ Pronto para FastAPI</li>
+</ul>
+</div>
+</div>
+
+<div class="footer">
+🚀 Concluindo tudo isso, você entra no FastAPI com MUITA vantagem.<br>
+Bons estudos!
+</div>
+
 </body>
 </html>
