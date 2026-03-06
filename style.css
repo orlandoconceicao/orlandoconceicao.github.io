@@ -12,11 +12,8 @@ body {
 }
 
 .card-wrapper {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    perspective: 1000px;
+    transform: rotate(-90deg) translateX(30px);
 }
 
 .card {
