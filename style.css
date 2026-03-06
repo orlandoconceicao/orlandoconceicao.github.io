@@ -141,6 +141,7 @@ body {
     animation: hide-card 1000ms forwards;
 }
 
+
 /* Keyframes */
 @keyframes show-card {
     50% {
