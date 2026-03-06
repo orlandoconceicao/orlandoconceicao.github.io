@@ -13,7 +13,7 @@ body {
 
 .card-wrapper {
     perspective: 1000px;
-    transform: rotate(-90deg) translateX(5000px);
+    transform: rotate(-90deg);
 }
 
 .card {
@@ -143,12 +143,12 @@ body {
 /* Keyframes */
 @keyframes show-card {
     50% {
-        transform: translateY(-75%) rotate(-90deg);
+        transform: translate(20px, -75%) rotate(-90deg);
         z-index: -1;
     }
 
     100% {
-        transform: translateY(0) rotate(0deg);
+        transform: translate(20px, 0) rotate(0deg);
         z-index: 10;
     }
 }
@@ -219,7 +219,7 @@ body {
 }
 
 @keyframes open-lid-stacking {
-    55% {
+    50% {
         z-index: 1;
     }
 
