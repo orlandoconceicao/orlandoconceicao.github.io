@@ -219,7 +219,7 @@ body {
 }
 
 @keyframes open-lid-stacking {
-    50% {
+    55% {
         z-index: 1;
     }
 
