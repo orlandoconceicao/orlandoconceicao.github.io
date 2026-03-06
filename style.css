@@ -13,7 +13,7 @@ body {
 
 .card-wrapper {
     perspective: 1000px;
-    transform: rotate(-90deg) translateX(100px);
+    transform: rotate(-90deg) translateX(5000px);
 }
 
 .card {
