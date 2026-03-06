@@ -13,8 +13,7 @@ body {
 
 .card-wrapper {
     perspective: 1000px;
-    transform: rotate(-90deg);
-    margin-left: 20px;
+    transform: rotate(-90deg) translateX(40px);
 }
 
 .card {
@@ -26,6 +25,7 @@ body {
     will-change: transform;
     transition: transform 250ms;
     box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.1);
+    transform-origin: right center;
 }
 
 .envelope:hover .card {
