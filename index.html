@@ -7,143 +7,201 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    :root {
+      --main: #54B689;
+      --bg1: #1E2A3A;
+      --bg2: #111821;
+      --text: #fff;
+      --border: #2b3a4d;
+    }
+
+    body {
+      color: var(--text);
+    }
+
+    #container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* BIO */
+    #bio-container {
+      flex: 1;
+      background: var(--bg1);
+      text-align: center;
+      padding: 30px;
+      border-right: 3px solid var(--border);
+    }
+
+    #bio-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+
+    #social-container {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    #social-container li {
+      margin: 0 10px;
+    }
+
+    #social-container a {
+      color: var(--main);
+      font-size: 26px;
+    }
+
+    /* ABOUT */
+    #about-container {
+      flex: 3;
+      background: var(--bg2);
+      padding: 40px;
+    }
+
+    #name {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: var(--main);
+    }
+
+    .description {
+      margin: 10px 0;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    /* SKILLS */
+    #skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .skills-box {
+      width: 33%;
+      margin-bottom: 20px;
+    }
+
+    .skills-box i {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+
+    /* PROJECT */
+    .project {
+      background: #1b2635;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 4px solid var(--main);
+      border-radius: 8px;
+    }
+
+    .project a {
+      color: var(--main);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    @media(max-width: 768px) {
+      #container {
+        flex-direction: column;
+      }
+
+      .skills-box {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<main id="container">
+<div id="container">
 
   <!-- BIO -->
-  <aside id="bio-container">
+  <div id="bio-container">
     <h2>Orlando Conceição</h2>
 
-    <img id="bio-image" src="img/profile.jpg" alt="Orlando Conceição"
+    <img id="bio-image"
+      src="img/profile.jpg"
       onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Orlando'">
 
-    <p>Olá, meu nome é Orlando e sou <span class="highlight">Desenvolvedor Backend</span>.</p>
-    <p id="welcome-text">Seja bem-vindo!</p>
+    <p>Backend Developer</p>
 
     <ul id="social-container">
-      <li><a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      <li><a href="https://github.com/orlandoconceicao" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-      <li><a href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="https://github.com/orlandoconceicao"><ion-icon name="logo-github"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
     </ul>
-
-    <div id="email-container">
-      <ion-icon name="mail-outline"></ion-icon>
-      <a href="mailto:orlandoconceicao94@gmail.com">orlandoconceicao94@gmail.com</a>
-    </div>
-  </aside>
+  </div>
 
   <!-- ABOUT -->
-  <section id="about-container">
+  <div id="about-container">
 
     <h1 id="name">Orlando Conceição</h1>
-    <p id="title"><span class="highlight">Backend Developer</span></p>
 
     <p class="description">
-      Desenvolvedor focado em backend e construção de APIs REST com Python, Django e FastAPI.
+      Desenvolvedor Backend focado em APIs REST com Django e Python.
     </p>
 
     <p class="description">
-      Experiência com PostgreSQL, autenticação JWT, Celery e versionamento com Git/GitHub.
+      Experiência com JWT, PostgreSQL, Docker básico e deploy na Render.
     </p>
 
-    <p class="description">
-      Integração com front-end e deploy de aplicações em ambiente cloud.
-    </p>
+    <!-- PROJECT -->
+    <h2>Projeto Principal</h2>
 
-    <a href="https://github.com/orlandoconceicao" id="btn-projects" target="_blank">
-      <ion-icon name="share-social-outline"></ion-icon>
-      <span>Ver GitHub</span>
-    </a>
+    <div class="project">
+      <h3>API Django REST - Cursos</h3>
 
-    <!-- PROJETOS -->
-    <h2 id="skills-section-title">Projetos</h2>
+      <p>API completa com autenticação JWT, CRUD e documentação Swagger.</p>
 
-    <div id="projects-container">
-
-      <div class="project-card">
-        <h3>API de Cursos (Django REST)</h3>
-        <p>API completa com autenticação JWT, CRUD e documentação Swagger.</p>
-
-        <div class="project-links">
-          <a href="https://github.com/orlandoconceicao/main-api-django" target="_blank">Repositório</a>
-          <!-- coloque seu link da render aqui depois -->
-          <a href="#" target="_blank">Deploy</a>
-        </div>
-      </div>
-
+      <a href="https://github.com/orlandoconceicao/main-api-django">GitHub</a>
     </div>
 
     <!-- SKILLS -->
-    <h2 id="skills-section-title">Minhas Skills</h2>
+    <h2 style="margin-top:30px;">Skills</h2>
 
     <div id="skills-container">
 
       <div class="skills-box">
-        <p class="skills-title">Backend</p>
+        <p>Backend</p>
         <i class="devicon-python-plain colored"></i>
         <i class="devicon-django-plain colored"></i>
-        <i class="devicon-fastapi-plain colored"></i>
       </div>
 
       <div class="skills-box">
-        <p class="skills-title">Database</p>
+        <p>Database</p>
         <i class="devicon-postgresql-plain colored"></i>
-        <i class="devicon-mysql-plain colored"></i>
       </div>
 
       <div class="skills-box">
-        <p class="skills-title">Infra</p>
-        <i class="devicon-linux-plain colored"></i>
+        <p>Tools</p>
         <i class="devicon-git-plain colored"></i>
         <i class="devicon-github-original colored"></i>
       </div>
 
     </div>
 
-  </section>
-</main>
-
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
-<style>
-  #projects-container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .project-card {
-    background: #1b2430;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 4px solid #54B689;
-  }
-
-  .project-card h3 {
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  .project-card p {
-    color: #ccc;
-    margin-bottom: 10px;
-  }
-
-  .project-links a {
-    margin-right: 10px;
-    color: #54B689;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .project-links a:hover {
-    text-decoration: underline;
-  }
-</style>
+  </div>
+</div>
 
 </body>
 </html>
