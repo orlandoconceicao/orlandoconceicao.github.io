@@ -1,217 +1,236 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Orlando Conceição</title>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Orlando Conceição</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 
-  <style>
-    *{
-      padding:0;
-      margin:0;
-      font-family:'Roboto',sans-serif;
-      box-sizing:border-box;
-    }
-
-    :root{
-      --main-color:#54B689;
-      --text:#fff;
-      --bio-bg:#1E2A3A;
-      --about-bg:#111821;
-      --border:#2b3a4d;
-    }
-
-    body{
-      background:var(--about-bg);
-      color:var(--text);
-    }
-
-    #container{
-      display:flex;
-      min-height:100vh;
-    }
-
-    /* BIO */
-    #bio-container{
-      flex:1;
-      background:var(--bio-bg);
-      text-align:center;
-      padding:30px;
-      border-right:3px solid var(--border);
-    }
-
-    #bio-image{
-      width:160px;
-      height:160px;
-      border-radius:50%;
-      margin:20px 0;
-      border:3px solid var(--main-color);
-    }
-
-    #social-container{
-      list-style:none;
-      margin:20px 0;
-      display:flex;
-      justify-content:center;
-      gap:15px;
-    }
-
-    #social-container a{
-      text-decoration:none;
-      color:var(--main-color);
-      font-weight:bold;
-    }
-
-    #about-container{
-      flex:3;
-      padding:50px;
-    }
-
-    #name{
-      font-size:42px;
-      margin-bottom:10px;
-    }
-
-    #title{
-      font-size:18px;
-      color:#ccc;
-      margin-bottom:15px;
-    }
-
-    .highlight{
-      color:var(--main-color);
-    }
-
-    .description{
-      margin:10px 0;
-      max-width:700px;
-      line-height:1.6;
-      color:#ddd;
-    }
-
-    #btn-projects{
-      display:inline-block;
-      margin:20px 0;
-      padding:10px 15px;
-      background:var(--main-color);
-      color:#fff;
-      text-decoration:none;
-      border-radius:6px;
-      font-weight:bold;
-    }
-
-    #skills-section-title{
-      margin-top:30px;
-      font-size:28px;
-    }
-
-    #skills-container{
-      display:flex;
-      flex-wrap:wrap;
-      margin-top:20px;
-      gap:20px;
-    }
-
-    .skills-box{
-      background:#1b2635;
-      padding:20px;
-      border-radius:10px;
-      flex:1;
-      min-width:200px;
-      border-left:4px solid var(--main-color);
-    }
-
-    .skills-title{
-      margin-bottom:10px;
-      font-weight:bold;
-      color:var(--main-color);
-    }
-
-    .skills-box i{
-      font-size:40px;
-      margin-right:8px;
-    }
-
-    @media(max-width:768px){
-      #container{
-        flex-direction:column;
+    <style>
+      *{
+        padding:0;
+        margin:0;
+        font-family:'Roboto',sans-serif;
+        box-sizing:border-box;
       }
-    }
-  </style>
-</head>
 
-<body>
+      :root{
+        --main-color:#54B689;
+        --text:#fff;
+        --bio-bg:#1E2A3A;
+        --about-bg:#111821;
+        --border:#2b3a4d;
+      }
 
-<main id="container">
+      body{
+        background:var(--about-bg);
+        color:var(--text);
+      }
 
-  <aside id="bio-container">
-    <h2>Orlando Conceição</h2>
+      #container{
+        display:flex;
+        min-height:100vh;
+      }
 
-    <img id="bio-image" src="img/profile.jpg" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Orlando'">
+      /* BIO */
+      #bio-container{
+        flex:1;
+        background:var(--bio-bg);
+        text-align:center;
+        padding:30px;
+        border-right:3px solid var(--border);
+      }
 
-    <p>Olá, meu nome é Orlando e sou <span class="highlight">Desenvolvedor Backend</span>.</p>
+      #bio-image{
+        width:160px;
+        height:160px;
+        border-radius:50%;
+        margin:20px 0;
+        border:3px solid var(--main-color);
+      }
 
-    <p id="welcome-text">Seja bem-vindo!</p>
+      #social-container{
+        list-style:none;
+        margin:20px 0;
+        display:flex;
+        justify-content:center;
+        gap:15px;
+      }
 
-    <ul id="social-container">
-      <li><a href="https://github.com/orlandoconceicao">GitHub</a></li>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="#">Instagram</a></li>
-    </ul>
+      #social-container a{
+        text-decoration:none;
+        color:var(--main-color);
+        font-weight:bold;
+      }
 
-  </aside>
+      #about-container{
+        flex:3;
+        padding:50px;
+      }
 
-  <section id="about-container">
+      #name{
+        font-size:42px;
+        margin-bottom:10px;
+      }
 
-    <h1 id="name">Orlando Conceição</h1>
-    <p id="title"><span class="highlight">Backend Developer | Python | Django REST | PostgreSQL | Linux | Git & GitHub</span></p>
+      #title{
+        font-size:18px;
+        color:#ccc;
+        margin-bottom:15px;
+      }
 
-    <p class="description">
-      Desenvolvedor focado em construção de APIs REST escaláveis utilizando Python e Django.
-    </p>
+      .highlight{
+        color:var(--main-color);
+      }
 
-    <p class="description">
-      Experiência com PostgreSQL, Celery, Linux e versionamento com Git e GitHub.
-    </p>
+      .description{
+        margin:10px 0;
+        max-width:700px;
+        line-height:1.6;
+        color:#ddd;
+      }
 
-    <a href="https://github.com/orlandoconceicao" id="btn-projects">Ver Projetos</a>
+      #btn-projects{
+        display:inline-block;
+        margin:20px 0;
+        padding:10px 15px;
+        background:var(--main-color);
+        color:#fff;
+        text-decoration:none;
+        border-radius:6px;
+        font-weight:bold;
+      }
 
-    <h2 id="skills-section-title">Minhas Skills</h2>
+      #skills-section-title{
+        margin-top:30px;
+        font-size:28px;
+      }
 
-    <div id="skills-container">
+      #skills-container{
+        display:flex;
+        flex-wrap:wrap;
+        margin-top:20px;
+        gap:20px;
+      }
 
-      <div class="skills-box">
-        <p class="skills-title">Backend</p>
-        <i class="devicon-python-plain colored"></i>
-        <i class="devicon-django-plain colored"></i>
+      .skills-box{
+        background:#1b2635;
+        padding:20px;
+        border-radius:10px;
+        flex:1;
+        min-width:200px;
+        border-left:4px solid var(--main-color);
+        display:flex;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        gap:14px;
+      }
+
+      .skills-title{
+        width:100%;
+        margin-bottom:10px;
+        font-weight:bold;
+        color:var(--main-color);
+      }
+
+      .skills-box i{
+        font-size:40px;
+        margin-right:8px;
+      }
+
+      .skill-pill{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        background:rgba(84,182,137,0.08);
+        border:1px solid rgba(84,182,137,0.25);
+        color:#d8d8d8;
+        padding:10px 14px;
+        border-radius:999px;
+        font-size:0.95rem;
+        font-weight:500;
+      }
+
+      @media(max-width:768px){
+        #container{
+          flex-direction:column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+  <main id="container">
+
+    <aside id="bio-container">
+      <h2>Orlando Conceição</h2>
+
+      <img id="bio-image" src="img/profile.jpg" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Orlando'">
+
+      <p>Olá, meu nome é Orlando e sou <span class="highlight">Desenvolvedor Backend</span>.</p>
+
+      <p id="welcome-text">Seja bem-vindo!</p>
+
+      <ul id="social-container">
+        <li><a href="https://github.com/orlandoconceicao">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/orlando-concei%C3%A7%C3%A3o-582234315/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/orllandox_/">Instagram</a></li>
+      </ul>
+
+    </aside>
+
+    <section id="about-container">
+
+      <h1 id="name">Orlando Conceição</h1>
+      <p id="title"><span class="highlight">Desenvolvedor Backend Júnior | Python | Django | PostgreSQL | APIs REST</span></p>
+
+      <p class="description">
+        Desenvolvedor Backend com foco em Python, Django, PostgreSQL e APIs REST. Possuo conhecimentos em Docker, Linux, Git e GitHub, além de experiência com tecnologias Frontend como React, JavaScript, HTML e CSS.
+      </p>
+
+      <p class="description">
+        Busco oportunidades como Desenvolvedor Backend Júnior para contribuir com o desenvolvimento de aplicações web e APIs escaláveis.
+      </p>
+
+      <a href="https://github.com/orlandoconceicao" id="btn-projects">Ver Projetos</a>
+
+      <h2 id="skills-section-title">Minhas Skills</h2>
+
+      <div id="skills-container">
+
+        <div class="skills-box">
+          <p class="skills-title">Backend</p>
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-django-plain colored"></i>
+        </div>
+
+        <div class="skills-box">
+          <p class="skills-title">Frontend</p>
+          <i class="devicon-react-original colored"></i>
+          <i class="devicon-html5-plain colored"></i>
+          <i class="devicon-css3-plain colored"></i>
+        </div>
+
+        <div class="skills-box">
+          <p class="skills-title">Banco de Dados</p>
+          <i class="devicon-postgresql-plain colored"></i>
+        </div>
+
+        <div class="skills-box">
+          <p class="skills-title">Infraestrutura</p>
+          <i class="devicon-docker-plain colored"></i>
+          <i class="devicon-linux-plain colored"></i>
+          <i class="devicon-git-plain colored"></i>
+        </div>
+
       </div>
 
-      <div class="skills-box">
-        <p class="skills-title">Database</p>
-        <i class="devicon-postgresql-plain colored"></i>
-      </div>
+    </section>
 
-      <div class="skills-box">
-        <p class="skills-title">Infra</p>
-        <i class="devicon-linux-plain colored"></i>
-        <i class="devicon-git-plain colored"></i>
-        <i class="devicon-github-original colored"></i>
-      </div>
+  </main>
 
-      <div class="skills-box">
-        <p class="skills-title">Frontend</p>
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
-
-</body>
-</html>
+  </body>
+  </html>
