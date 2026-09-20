@@ -33,30 +33,6 @@ body {
   line-height: 1.65;
 }
 
-body::before,
-body::after {
-  position: fixed;
-  z-index: 5;
-  width: 26px;
-  height: 26px;
-  border-color: rgba(255, 255, 255, .28);
-  border-style: solid;
-  content: '';
-  pointer-events: none;
-}
-
-body::before {
-  top: 18px;
-  right: 18px;
-  border-width: 1px 1px 0 0;
-}
-
-body::after {
-  bottom: 18px;
-  left: 18px;
-  border-width: 0 0 1px 1px;
-}
-
 body::selection {
   color: #111111;
   background: var(--accent-strong);
@@ -115,11 +91,36 @@ h3 {
 }
 
 #about-container {
+  position: relative;
   flex: 1 1 auto;
   min-width: 0;
   padding: clamp(38px, 5vw, 64px) clamp(28px, 6vw, 88px);
   background: var(--about-bg-color);
   animation: page-enter .6s ease both;
+}
+
+#about-container::before,
+#about-container::after {
+  position: absolute;
+  z-index: 1;
+  width: 26px;
+  height: 26px;
+  border-color: rgba(255, 255, 255, .28);
+  border-style: solid;
+  content: '';
+  pointer-events: none;
+}
+
+#about-container::before {
+  top: 18px;
+  right: 18px;
+  border-width: 1px 1px 0 0;
+}
+
+#about-container::after {
+  bottom: 18px;
+  left: 18px;
+  border-width: 0 0 1px 1px;
 }
 
 /* Sidebar */
@@ -594,11 +595,15 @@ footer {
 
 @media (max-width: 900px) {
   #container {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   #bio-container {
-    position: relative;
+    position: static;
+    top: auto;
+    align-self: stretch;
+    flex: 0 0 auto;
     min-height: auto;
     padding: 36px 28px 30px;
     border-right: 0;
@@ -619,18 +624,18 @@ footer {
 }
 
 @media (max-width: 560px) {
-  body::before,
-  body::after {
+  #about-container::before,
+  #about-container::after {
     width: 18px;
     height: 18px;
   }
 
-  body::before {
+  #about-container::before {
     top: 10px;
     right: 10px;
   }
 
-  body::after {
+  #about-container::after {
     bottom: 10px;
     left: 10px;
   }
